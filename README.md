@@ -1,11 +1,11 @@
-#**Project 3: Use Deep Learning to Clone Driving Behavior** 
+# **Project 3: Use Deep Learning to Clone Driving Behavior** 
 
-Mode: Constant speed 
-Input: images
+Mode: Constant speed  
+Input: images  
 Output: steering angle
 
-Mode: Racing
-Input:image
+Mode: Racing  
+Input:image  
 Output: steering and throttle
 
 
@@ -34,7 +34,7 @@ The goals / steps of this project are the following:
 [image10]: ./examples/resize.png "Resized image"
 
 ---
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 * model.py containing the script to create and train the model
@@ -43,27 +43,27 @@ My project includes the following files:
 * model.json containing training weights 
 * writeup_report.pdf summarizing the results
 
-####2. Running code
+#### 2. Running code
 
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.json
 ```
 
-####3. Model code
+#### 3. Model code
 
 The model.py file contains the code for training and saving the convolution neural network and training weights (model.h5, model.json).  
 The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.  
 The batch generater is programmed with a thread safe.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 My model consists of 5 convolution neural networks and 3 fully connected layers (slightly modified from Nvidia model).  
 The model includes RELU layers, and the data is normalized in the model using a Keras lambda layer. 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting and using Early stopping callback.   
 The model was trained and validated on different data sets to ensure that the model was not overfitting.  
@@ -71,11 +71,11 @@ The model was tested by running it through the simulator and ensuring that the v
 
 ![Model plot][image1]
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer with the initial learning rate of 0.001. 8 Epoch, 256 Batch size
 
-####4. Training data
+#### 4. Training data
 
 Two set of driving behaviors have been acquired and combined for the training and validation the model. 
 * First is to teach the model with good driving style by keeping it on the center. 
@@ -85,6 +85,8 @@ Two set of driving behaviors have been acquired and combined for the training an
 ![Recovery Image2][image3]
 ![Recovery Image2][image4]
 
+The car is steering from the right to the centre for learning recovery.
+
 In addition, the data was visualised to see any sign of bias. It was seen that the driving data is bias around the zero steering angles  
 and rather negative. This will have an impact in driving straight and turninng left. So as to avoid this,  
 I used the sampling technique to control amount of low angles data to go through the each training loop (model.py lines 239-251).
@@ -93,7 +95,7 @@ I used the sampling technique to control amount of low angles data to go through
 
 
 
-####5. Solution Design Approach
+#### 5. Solution Design Approach
 
 My first step was to use a convolution neural network model similar to the Nvidia. I thought this model might be appropriate because it has a good number of layers but not too complex to learning the driving task.
 
@@ -104,7 +106,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####6. Training Set & Training Process
+#### 6. Training Set & Training Process
 Image preprocessing is shown below.
 ![Normal image][image6]
 ![Flipped][image7]
@@ -119,7 +121,7 @@ For the training process, I had 7680,31488 number of images for track 1 and 2 re
 The model was successfully trained with the initial learning rate of 0.001. 8 Epoch, 256 Batch size on both tracks.
 
 
-####7. Racing mode- see Track1_racing
+#### 7. Racing mode- see Track1_racing
 * I used the same data on track 1 to teach the car to drive with the speed as I did on the simulator. 
 * The work is primitive just to test out the idea. It was not refined just yet. 
 * I added throttle data to the network in order to get the prediction on the throttle as well as steering. 
