@@ -7,6 +7,7 @@
 **Mode**: Racing  
 **Input**:image  
 **Output**: steering and throttle
+(see [files in track1_racing](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing))
 
 
 The goals / steps of this project are the following:
@@ -109,6 +110,11 @@ The final step was to run the simulator to see how well the car was driving arou
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 #### 6. Training Set & Training Process
+Track 2 is more challenging than track 1 with rather steep up and down hills, sharp bends, zig zag  
+road and shadow overcast. To help generalise the driving in this condition without using a lot of  
+data, I augmented the training data with image up/down, left/right translation with a corrected  
+steering shift of 0.004 radian/pixel, and also randomly adjusting the brightness.
+
 Image preprocessing is shown below.
 ![Normal image][image6] _Original image_
 ![Flipped][image7] _Flipped image_
