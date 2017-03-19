@@ -123,7 +123,7 @@ For the training process, I had 7680,31488 number of images for track 1 and 2 re
 The model was successfully trained with the initial learning rate of 0.001. 8 Epoch, 256 Batch size on both tracks.
 
 
-#### 7. Racing mode- see Track1_racing
+#### 7. Racing mode- see [Track1_racing](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing)
 * I used the same data on track 1 to teach the car to drive with the speed as I did on the simulator. 
 * The work is primitive just to test out the idea. It was not refined just yet. 
 * I added throttle data to the network in order to get the prediction on the throttle as well as steering. 
