@@ -1,12 +1,12 @@
 # **Project 3: Use Deep Learning to Clone Driving Behavior** 
 
-Mode: Constant speed  
-Input: images  
-Output: steering angle
+**Mode**: Constant speed  
+**Input**: images  
+**Output**: steering angle
 
-Mode: Racing  
-Input:image  
-Output: steering and throttle
+**Mode**: Racing  
+**Input**:image  
+**Output**: steering and throttle
 
 
 The goals / steps of this project are the following:
@@ -70,7 +70,7 @@ The model was trained and validated on different data sets to ensure that the mo
 The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ![Model plot][image1] 
-Graph model
+_Graph model_
 
 #### 3. Model parameter tuning
 
@@ -85,7 +85,7 @@ Two set of driving behaviors have been acquired and combined for the training an
 ![Recovery Image1][image2]
 ![Recovery Image2][image3]
 ![Recovery Image2][image4]
-Recovery learning images
+_Recovery learning images_
 
 The car is steering from the right to the centre for learning recovery.
 
@@ -94,7 +94,7 @@ and rather negative. This will have an impact in driving straight and turninng l
 I used the sampling technique to control amount of low angles data to go through the each training loop (model.py lines 239-251).
 
 ![Bias data][image5]
-
+_Bias data near zero angles_
 
 
 #### 5. Solution Design Approach
@@ -110,11 +110,11 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 6. Training Set & Training Process
 Image preprocessing is shown below.
-![Normal image][image6] Original image
-![Flipped][image7] Flipped image
-![Brightness][image8] Change brightness
-![Shifted][image9] Shifted image
-![Resized][image10] Resized image
+![Normal image][image6] _Original image_
+![Flipped][image7] _Flipped image_
+![Brightness][image8] _Change brightness_
+![Shifted][image9] _Shifted image_
+![Resized][image10] _Resized image_
 
 Having collected all data, I randomly shuffled and splited the data 80% training and 20% testing. 
 During the training process, the left/centre/right images is randomly and uniformly selected for image augmentation and training.  
