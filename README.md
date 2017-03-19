@@ -15,9 +15,9 @@ The goals / steps of this project are the following:
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one & two without leaving the road
 * Summarize the results with a written report
-* My exploration work includes both Steering and Throttle learning as a racing mode  
-  This is my first prototype to test out the idea. The result was not too shabby. At least the car  
-  stayed on the track1 with the variable speed (30 mph) I trained it to drive! 
+* My exploration work includes both Steering and Throttle learning as in a racing mode.  
+  This is my first prototype to test out the idea. I only tried on Track 1. The result was not too shabby.  
+  At least the car stayed on the track with the variable speed (upto 30 mph) which I trained it to drive! 
 
 
 [//]: # (Image References)
@@ -69,7 +69,8 @@ The model contains dropout layers in order to reduce overfitting and using Early
 The model was trained and validated on different data sets to ensure that the model was not overfitting.  
 The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-![Model plot][image1]
+![Model plot][image1] 
+Graph model
 
 #### 3. Model parameter tuning
 
@@ -84,6 +85,7 @@ Two set of driving behaviors have been acquired and combined for the training an
 ![Recovery Image1][image2]
 ![Recovery Image2][image3]
 ![Recovery Image2][image4]
+Recovery learning images
 
 The car is steering from the right to the centre for learning recovery.
 
@@ -108,11 +110,11 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 6. Training Set & Training Process
 Image preprocessing is shown below.
-![Normal image][image6]
-![Flipped][image7]
-![Brightness][image8]
-![Shifted][image9]
-![Resized][image10]
+![Normal image][image6] Original image
+![Flipped][image7] Flipped image
+![Brightness][image8] Change brightness
+![Shifted][image9] Shifted image
+![Resized][image10] Resized image
 
 Having collected all data, I randomly shuffled and splited the data 80% training and 20% testing. 
 During the training process, the left/centre/right images is randomly and uniformly selected for image augmentation and training.  
