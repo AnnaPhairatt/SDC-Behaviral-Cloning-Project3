@@ -18,7 +18,8 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 * My exploration work includes both Steering and Throttle learning as in a racing mode.  
   This is my first prototype to test out the idea. I only tried on Track 1. The result was not too shabby.  
-  At least the car stayed on the track with the variable speed (upto 30 mph) which I trained it to drive! 
+  However, some more improvement is needed. At least the car stayed on the track with the variable speed (upto 30 mph)  
+  which I trained it to drive! 
 
 
 [//]: # (Image References)
