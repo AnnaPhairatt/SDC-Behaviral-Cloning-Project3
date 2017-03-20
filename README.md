@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 * My exploration work includes both Steering and Throttle learning as in a hurry mode.  
   This is my first prototype to test out the idea just to see what happen. I only tried on Track 1.  
   The result was not too shabby. At least the car stayed on the track with the variable speed (upto 30 mph) which I trained it to drive!  
-  However, some what improvement is needed. The car might struggle to go uphills or incredible speed down hills.  
-
+  However, some what improvement is needed. The car might struggle to go uphills on start-up or incredible speed down hills.  
+  One could use throttle information to adjust the speed accordingly to the tracks.
 
 
 [//]: # (Image References)
@@ -135,7 +135,6 @@ The model was successfully trained with the initial learning rate of 0.001. 8 Ep
 * I used the same data on track 1 to teach the car to drive with the speed as I did on the simulator. 
 * The work is primitive just to test out the idea and to see what happen. It was not refined just yet. 
 * I added throttle data to the network in order to get the prediction on the throttle as well as steering. 
-* One could use throttle information to adjust the speed accordingly to the tracks.
 * So I don't need to set the target constant speed. 
 * The aim was to let the car learn when to go fast or slow in the straight line, conering, up hills or down hills. 
   
