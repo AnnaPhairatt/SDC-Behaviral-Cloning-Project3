@@ -5,7 +5,7 @@
 **Output**: steering angle
 
 **Mode**: I'm in a hurry and late for a project submission mode  
-**Input**:image  
+**Input**:images  
 **Output**: steering and throttle
 (see [files in a hurry](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing))
 
@@ -133,7 +133,7 @@ The model was successfully trained with the initial learning rate of 0.001. 8 Ep
 
 #### 7. In a hurry mode- see [Throttle](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing)
 * I used the same data on track 1 to teach the car to drive with the speed as I did on the simulator. 
-* The work is primitive just to test out the idea. It was not refined just yet. 
+* The work is primitive just to test out the idea and to see what happen. It was not refined just yet. 
 * I added throttle data to the network in order to get the prediction on the throttle as well as steering. 
 * One could use throttle information to adjust the speed accordingly to the tracks.
 * So I don't need to set the target constant speed. 
