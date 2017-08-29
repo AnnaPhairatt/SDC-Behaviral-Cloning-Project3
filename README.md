@@ -1,12 +1,14 @@
 # **Project 3: Use Deep Learning to Clone Driving Behavior** 
 
-#### Project submission    
+#### Project submission
+------------------------    
 **Mode**: Track1(Simple)- Constant speed  
 **Input**: Images  
 **Output**: Steering angle
 (see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/blob/master/model.py))
 
 #### Exploration work  
+------------------------
 **Mode**: Track2(Twisted and turn corners with up/down hills)-Constant speed  
 **Input**: Images  
 **Output**: Steering angle
