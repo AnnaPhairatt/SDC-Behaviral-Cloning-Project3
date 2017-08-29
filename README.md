@@ -1,13 +1,21 @@
 # **Project 3: Use Deep Learning to Clone Driving Behavior** 
 
-**Mode**: Constant chill out speed  
-**Input**: images  
-**Output**: steering angle
+#### Project submission    
+**Mode**: Track1(Simple)- Constant speed  
+**Input**: Images  
+**Output**: Steering angle
+(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/blob/master/model.py)
 
-**Mode**: I'm in a hurry and late for a project submission mode  
-**Input**:images  
-**Output**: steering and throttle
-(see [files in a hurry](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing))
+#### Exploration work  
+**Mode**: Track2(Twisted and turn corners with up/down hills)-Constant speed  
+**Input**: Images  
+**Output**: Steering angle
+(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track2)
+
+**Mode**: Track1- Variable speed drive  
+**Input**:Images  
+**Output**: Steering and throttle
+(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing))
 
 
 The goals / steps of this project are the following:
@@ -16,8 +24,8 @@ The goals / steps of this project are the following:
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one & two without leaving the road
 * Summarize the results with a written report
-* My exploration work includes both Steering and Throttle learning as in a hurry mode.  
-  This is my first prototype to test out the idea just to see what happen. I only tried on Track 1.  
+* My exploration work includes both Steering and Throttle learning.  
+  This is my first prototype to test out the idea of using deep neural netorks for multiple outputs. I only tried on Track 1.  
   The result was not too shabby. At least the car stayed on the track with the variable speed (upto 30 mph) which I trained it to drive!  
   However, some what improvement is needed. The car might struggle to go uphills on start-up or incredible speed down hills.  
   One could use throttle information to adjust the speed accordingly to the tracks.
@@ -131,11 +139,10 @@ For the training process, I had 7680,31488 number of images for track 1 and 2 re
 The model was successfully trained with the initial learning rate of 0.001. 8 Epoch, 256 Batch size on both tracks.
 
 
-#### 7. In a hurry mode- see [Throttle](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing)
+#### 7. Variable speed drive- see [here](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing)
 * I used the same data on track 1 to teach the car to drive with the speed as I did on the simulator. 
-* The work is primitive just to test out the idea and to see what happen. It was not refined just yet. 
+* The work is primitive and needed to be refined further. 
 * I added throttle data to the network in order to get the prediction on the throttle as well as steering. 
-* So I don't need to set the target constant speed. 
 * The aim was to let the car learn when to go fast or slow in the straight line, conering, up hills or down hills. 
   
 
