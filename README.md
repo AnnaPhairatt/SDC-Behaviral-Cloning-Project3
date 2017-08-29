@@ -4,17 +4,17 @@
 **Mode**: Track1(Simple)- Constant speed  
 **Input**: Images  
 **Output**: Steering angle
-(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/blob/master/model.py)
+(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/blob/master/model.py))
 
 #### Exploration work  
 **Mode**: Track2(Twisted and turn corners with up/down hills)-Constant speed  
 **Input**: Images  
 **Output**: Steering angle
-(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track2)
+(see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track2))
 
 **Mode**: Track1- Variable speed drive  
 **Input**:Images  
-**Output**: Steering and throttle
+**Output**: Steering angle and Throttle
 (see [codes](https://github.com/LukePhairatt/SDC-Behaviral-Cloning-Project3/tree/master/track1_racing))
 
 
